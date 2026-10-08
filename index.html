@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mohammad Parsakhou | Product Manager &amp; Product Owner</title>
+  <meta name="description" content="Mohammad Parsakhou: electronic engineer, product owner, founder and product manager in Toronto. Story, skills, projects and contact." />
+  <meta property="og:title" content="Mohammad Parsakhou" />
+  <meta property="og:description" content="Electronic engineer, product owner, founder and product manager." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="theme-color" content="#F5F7FA" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B3FAF'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">MP</span>
+        <span class="brand-name" data-name>Mohammad Parsakhou</span>
+      </a>
+      <button class="lang-toggle" id="lang-toggle" type="button" lang="fr" aria-label="Voir le site en français">FR</button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only" data-i18n="menu">Menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#story" data-i18n="nav_story">Story</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#life" data-i18n="nav_life">Life</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contact" data-i18n="cta_touch">Get in Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO ---------------------------------------------------------- -->
+    <section id="home" class="hero" aria-labelledby="hero-name">
+      <div class="hero-glow" aria-hidden="true"><span></span><span></span></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <ol class="roles" id="hero-roles" aria-label="Roles"></ol>
+          <h1 id="hero-name" class="hero-name" data-name>Mohammad Parsakhou</h1>
+          <p class="hero-headline" id="hero-headline"></p>
+          <p class="hero-intro" id="hero-intro"></p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects" data-i18n="view_work">View My Work</a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="contact_me">Contact Me</a>
+            <a class="btn btn-link" id="resume-btn" href="#" target="_blank" rel="noopener" hidden data-i18n="resume">Download resume (PDF)</a>
+          </div>
+          <ul class="hero-stats" id="hero-stats"></ul>
+          <ul class="hero-meta" id="hero-meta"></ul>
+        </div>
+
+        <aside class="hero-visual">
+          <div class="portrait-wrap">
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <div class="portrait" id="portrait"></div>
+          </div>
+          <div class="process">
+            <p class="label" data-i18n="how">How I work</p>
+            <ol>
+              <li><span class="step">01</span><span><b data-i18n="step1_t">Discover</b> <span data-i18n="step1_d">Research the market and the user</span></span></li>
+              <li><span class="step">02</span><span><b data-i18n="step2_t">Define</b> <span data-i18n="step2_d">Roadmap, stories and success metrics</span></span></li>
+              <li><span class="step">03</span><span><b data-i18n="step3_t">Deliver</b> <span data-i18n="step3_d">Agile sprints with the whole team</span></span></li>
+              <li><span class="step">04</span><span><b data-i18n="step4_t">Measure</b> <span data-i18n="step4_d">KPIs, A/B tests and iteration</span></span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Moving band of skills -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee-track"></div></div>
+
+    <!-- 2. ABOUT --------------------------------------------------------- -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-left">
+          <header class="section-head reveal">
+            <p class="eyebrow" data-i18n="about_eyebrow">About me</p>
+            <h2 id="about-title" data-i18n="about_title">Engineer by training, product builder by choice.</h2>
+            <p class="lead" id="about-summary"></p>
+          </header>
+          <figure class="photo-card reveal" id="about-photo"></figure>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <h3 class="label" data-i18n="l_background">Background</h3>
+            <p id="about-background"></p>
+          </div>
+          <div class="fact">
+            <h3 class="label" data-i18n="l_interests">Interests</h3>
+            <ul class="chips" id="about-interests"></ul>
+          </div>
+          <div class="fact fact-wide">
+            <h3 class="label" data-i18n="l_journey">Journey</h3>
+            <ul class="journey" id="about-journey"></ul>
+          </div>
+          <div class="fact">
+            <h3 class="label" data-i18n="l_motivation">What motivates me</h3>
+            <p id="about-motivation"></p>
+          </div>
+          <div class="fact">
+            <h3 class="label" data-i18n="l_focus">Working toward</h3>
+            <p id="about-focus"></p>
+          </div>
+          <div class="fact fact-wide">
+            <h3 class="label" data-i18n="l_certs">Certifications</h3>
+            <ul class="journey journey-2col" id="about-certs"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STORY --------------------------------------------------------- -->
+    <section id="story" class="section section-alt" aria-labelledby="story-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="story_eyebrow">My story</p>
+          <h2 id="story-title"></h2>
+          <p class="lead" id="story-intro"></p>
+        </header>
+        <div class="timeline-wrap">
+          <div class="timeline-line" aria-hidden="true"><span id="timeline-fill"></span></div>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS -------------------------------------------------------- -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="skills_eyebrow">Skills</p>
+          <h2 id="skills-title" data-i18n="skills_title">What I bring to a product team</h2>
+        </header>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- 5. PROJECTS ------------------------------------------------------ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="projects_eyebrow">Projects</p>
+          <h2 id="projects-title" data-i18n="projects_title">Companies and products I've built</h2>
+        </header>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- 6. LIFE ---------------------------------------------------------- -->
+    <section id="life" class="section life" aria-labelledby="life-title">
+      <div class="wrap life-grid">
+        <div class="life-copy reveal">
+          <p class="eyebrow" data-i18n="life_eyebrow">Life</p>
+          <h2 id="life-title"></h2>
+          <p class="lead" id="life-text"></p>
+          <ul class="hobbies" id="life-hobbies"></ul>
+          <figure class="photo-card" id="life-photo"></figure>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT ------------------------------------------------------- -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-inner reveal">
+        <div class="contact-avatar" id="contact-avatar" aria-hidden="true"></div>
+        <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+        <h2 id="contact-heading"></h2>
+        <p class="contact-invite" id="contact-invite"></p>
+        <div class="contact-row" id="contact-email"></div>
+        <ul class="socials" id="contact-socials" aria-label="Social profiles"></ul>
+        <a class="btn btn-primary btn-lg" id="contact-cta" href="#contact" data-i18n="cta_touch">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year">2026</span> <span data-name>Mohammad Parsakhou</span></p>
+      <a href="#home" data-i18n="back_top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
